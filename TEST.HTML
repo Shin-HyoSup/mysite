@@ -1,0 +1,1087 @@
+<style>
+  #bid-embed-section {
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --text-soft: #475569;
+    --border: rgba(148, 163, 184, 0.18);
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+    padding: 32px;
+    border-radius: 24px;
+    color: #0f172a;
+    box-sizing: border-box;
+  }
+  #bid-embed-section * {
+    box-sizing: border-box;
+  }
+  #bid-embed-section .bid-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #bid-embed-section .bid-top {
+    margin-bottom: 24px;
+  }
+  #bid-embed-section .bid-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #bid-embed-section .bid-dday {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.03em;
+  }
+  #bid-embed-section .bid-subtitle {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+  #bid-embed-section .bid-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 28px;
+  }
+  #bid-embed-section .bid-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  #bid-embed-section .bid-card p {
+    margin: 0 0 14px 0;
+    line-height: 1.7;
+    color: #1e293b;
+  }
+  #bid-embed-section .bid-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  #bid-embed-section .bid-list li {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  #bid-embed-section .bid-list strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  #bid-embed-section .bid-gallery {
+    display: grid;
+    gap: 16px;
+  }
+  #bid-embed-section .bid-gallery figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-gallery img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  #bid-embed-section .bid-gallery figcaption {
+    padding: 10px 14px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-gallery a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  #bid-embed-section .bid-progress-wrap {
+    margin-top: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dbe4ea;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  #bid-embed-section .bid-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  #bid-embed-section .bid-progress-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  @media (max-width: 900px) {
+    #bid-embed-section {
+      padding: 20px;
+    }
+    #bid-embed-section .bid-grid {
+      grid-template-columns: 1fr;
+    }
+    #bid-embed-section .bid-gallery img {
+      height: 220px;
+    }
+  }</style
+><style>
+  #bid-embed-section {
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --text-soft: #475569;
+    --border: rgba(148, 163, 184, 0.18);
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+    padding: 32px;
+    border-radius: 24px;
+    color: #0f172a;
+    box-sizing: border-box;
+  }
+  #bid-embed-section * {
+    box-sizing: border-box;
+  }
+  #bid-embed-section .bid-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #bid-embed-section .bid-top {
+    margin-bottom: 24px;
+  }
+  #bid-embed-section .bid-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #bid-embed-section .bid-dday {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.03em;
+  }
+  #bid-embed-section .bid-subtitle {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+  #bid-embed-section .bid-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 28px;
+  }
+  #bid-embed-section .bid-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  #bid-embed-section .bid-card p {
+    margin: 0 0 14px 0;
+    line-height: 1.7;
+    color: #1e293b;
+  }
+  #bid-embed-section .bid-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  #bid-embed-section .bid-list li {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  #bid-embed-section .bid-list strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  #bid-embed-section .bid-gallery {
+    display: grid;
+    gap: 16px;
+  }
+  #bid-embed-section .bid-gallery figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-gallery img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  #bid-embed-section .bid-gallery figcaption {
+    padding: 10px 14px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-gallery a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  #bid-embed-section .bid-progress-wrap {
+    margin-top: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dbe4ea;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  #bid-embed-section .bid-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  #bid-embed-section .bid-progress-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  @media (max-width: 900px) {
+    #bid-embed-section {
+      padding: 20px;
+    }
+    #bid-embed-section .bid-grid {
+      grid-template-columns: 1fr;
+    }
+    #bid-embed-section .bid-gallery img {
+      height: 220px;
+    }
+  }</style
+><style>
+  #bid-embed-section {
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --text-soft: #475569;
+    --border: rgba(148, 163, 184, 0.18);
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+    padding: 32px;
+    border-radius: 24px;
+    color: #0f172a;
+    box-sizing: border-box;
+  }
+  #bid-embed-section * {
+    box-sizing: border-box;
+  }
+  #bid-embed-section .bid-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #bid-embed-section .bid-top {
+    margin-bottom: 24px;
+  }
+  #bid-embed-section .bid-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #bid-embed-section .bid-dday {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.03em;
+  }
+  #bid-embed-section .bid-subtitle {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+  #bid-embed-section .bid-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 28px;
+  }
+  #bid-embed-section .bid-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  #bid-embed-section .bid-card p {
+    margin: 0 0 14px 0;
+    line-height: 1.7;
+    color: #1e293b;
+  }
+  #bid-embed-section .bid-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  #bid-embed-section .bid-list li {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  #bid-embed-section .bid-list strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  #bid-embed-section .bid-gallery {
+    display: grid;
+    gap: 16px;
+  }
+  #bid-embed-section .bid-gallery figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-gallery img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  #bid-embed-section .bid-gallery figcaption {
+    padding: 10px 14px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-gallery a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  #bid-embed-section .bid-progress-wrap {
+    margin-top: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dbe4ea;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  #bid-embed-section .bid-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  #bid-embed-section .bid-progress-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  @media (max-width: 900px) {
+    #bid-embed-section {
+      padding: 20px;
+    }
+    #bid-embed-section .bid-grid {
+      grid-template-columns: 1fr;
+    }
+    #bid-embed-section .bid-gallery img {
+      height: 220px;
+    }
+  }</style
+><style>
+  #bid-embed-section {
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --text-soft: #475569;
+    --border: rgba(148, 163, 184, 0.18);
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+    padding: 32px;
+    border-radius: 24px;
+    color: #0f172a;
+    box-sizing: border-box;
+  }
+  #bid-embed-section * {
+    box-sizing: border-box;
+  }
+  #bid-embed-section .bid-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #bid-embed-section .bid-top {
+    margin-bottom: 24px;
+  }
+  #bid-embed-section .bid-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #bid-embed-section .bid-dday {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.03em;
+  }
+  #bid-embed-section .bid-subtitle {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+  #bid-embed-section .bid-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 28px;
+  }
+  #bid-embed-section .bid-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  #bid-embed-section .bid-card p {
+    margin: 0 0 14px 0;
+    line-height: 1.7;
+    color: #1e293b;
+  }
+  #bid-embed-section .bid-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  #bid-embed-section .bid-list li {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  #bid-embed-section .bid-list strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  #bid-embed-section .bid-gallery {
+    display: grid;
+    gap: 16px;
+  }
+  #bid-embed-section .bid-gallery figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-gallery img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  #bid-embed-section .bid-gallery figcaption {
+    padding: 10px 14px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-gallery a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  #bid-embed-section .bid-progress-wrap {
+    margin-top: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dbe4ea;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  #bid-embed-section .bid-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  #bid-embed-section .bid-progress-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  @media (max-width: 900px) {
+    #bid-embed-section {
+      padding: 20px;
+    }
+    #bid-embed-section .bid-grid {
+      grid-template-columns: 1fr;
+    }
+    #bid-embed-section .bid-gallery img {
+      height: 220px;
+    }
+  }</style
+><style>
+  #bid-embed-section {
+    --accent: #0f766e;
+    --accent-soft: #ccfbf1;
+    --text-soft: #475569;
+    --border: rgba(148, 163, 184, 0.18);
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+    padding: 32px;
+    border-radius: 24px;
+    color: #0f172a;
+    box-sizing: border-box;
+  }
+  #bid-embed-section * {
+    box-sizing: border-box;
+  }
+  #bid-embed-section .bid-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #bid-embed-section .bid-top {
+    margin-bottom: 24px;
+  }
+  #bid-embed-section .bid-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #bid-embed-section .bid-dday {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.03em;
+  }
+  #bid-embed-section .bid-subtitle {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 16px;
+  }
+  #bid-embed-section .bid-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 28px;
+  }
+  #bid-embed-section .bid-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  #bid-embed-section .bid-card p {
+    margin: 0 0 14px 0;
+    line-height: 1.7;
+    color: #1e293b;
+  }
+  #bid-embed-section .bid-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  #bid-embed-section .bid-list li {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  #bid-embed-section .bid-list strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  #bid-embed-section .bid-gallery {
+    display: grid;
+    gap: 16px;
+  }
+  #bid-embed-section .bid-gallery figure {
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-gallery img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+  #bid-embed-section .bid-gallery figcaption {
+    padding: 10px 14px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-gallery a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  #bid-embed-section .bid-progress-wrap {
+    margin-top: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  #bid-embed-section .bid-progress-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  #bid-embed-section .bid-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dbe4ea;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  #bid-embed-section .bid-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  #bid-embed-section .bid-progress-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  @media (max-width: 900px) {
+    #bid-embed-section {
+      padding: 20px;
+    }
+    #bid-embed-section .bid-grid {
+      grid-template-columns: 1fr;
+    }
+    #bid-embed-section .bid-gallery img {
+      height: 220px;
+    }
+  }
+</style>
+<section id="bid-embed-section">
+  <style>
+    #bid-embed-section {
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+      --text-soft: #475569;
+      --border: rgba(148, 163, 184, 0.18);
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef6f8 100%);
+      padding: 32px;
+      border-radius: 24px;
+      color: #0f172a;
+      box-sizing: border-box;
+    }
+    #bid-embed-section * {
+      box-sizing: border-box;
+    }
+    #bid-embed-section .bid-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    #bid-embed-section .bid-top {
+      margin-bottom: 24px;
+    }
+    #bid-embed-section .bid-badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    #bid-embed-section .bid-dday {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.03em;
+    }
+    #bid-embed-section .bid-subtitle {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 16px;
+    }
+    #bid-embed-section .bid-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: start;
+      margin-top: 28px;
+    }
+    #bid-embed-section .bid-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    #bid-embed-section .bid-card h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+    #bid-embed-section .bid-card p {
+      margin: 0 0 14px 0;
+      line-height: 1.7;
+      color: #1e293b;
+    }
+    #bid-embed-section .bid-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+    #bid-embed-section .bid-list li {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    #bid-embed-section .bid-list strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    #bid-embed-section .bid-gallery {
+      display: grid;
+      gap: 16px;
+    }
+    #bid-embed-section .bid-gallery figure {
+      margin: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    #bid-embed-section .bid-gallery img {
+      display: block;
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+    #bid-embed-section .bid-gallery figcaption {
+      padding: 10px 14px 14px;
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+    #bid-embed-section .bid-gallery a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    #bid-embed-section .bid-progress-wrap {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    #bid-embed-section .bid-progress-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--text-soft);
+    }
+    #bid-embed-section .bid-progress-bar {
+      width: 100%;
+      height: 14px;
+      background: #dbe4ea;
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+    #bid-embed-section .bid-progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #0f766e, #14b8a6);
+      border-radius: 999px;
+      transition: width 0.5s ease;
+    }
+    #bid-embed-section .bid-progress-note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-soft);
+    }
+    @media (max-width: 900px) {
+      #bid-embed-section {
+        padding: 20px;
+      }
+      #bid-embed-section .bid-grid {
+        grid-template-columns: 1fr;
+      }
+      #bid-embed-section .bid-gallery img {
+        height: 220px;
+      }
+    }
+  </style>
+  <div class="bid-wrap">
+    <div class="bid-top">
+      <div class="bid-badge">Bid Opportunity</div>
+      <h2 class="bid-dday" id="bid-dday-text">|=dday=|</h2>
+      <p class="bid-subtitle">
+        Bid period: <strong>2026.04.11</strong> ~ <strong>2026.04.26</strong>
+      </p>
+    </div>
+    <div class="bid-grid">
+      <div class="bid-card">
+        <h3>Bid Invitation</h3>
+        <p>We are pleased to inform you of the following bid opportunity.</p>
+        <p>
+          Please take a moment to look at the equipment list and let us know if
+          you would like to participate with us.
+        </p>
+        <p>Please contact us if you have any questions.</p>
+        <ul class="bid-list">
+          <li><strong>Location</strong> Singapore</li>
+          <li><strong>Bidding Date</strong> 24 April 2026</li>
+          <li><strong>Need your offers by</strong> 23 April 2026</li>
+          <li><strong>Bid Window</strong> 11 April 2026 ~ 26 April 2026</li>
+        </ul>
+      </div>
+      <div class="bid-gallery">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+            alt="Singapore skyline"
+          />
+          <figcaption>
+            <a
+              href="https://unsplash.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Image source</a
+            >
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+            alt="Business meeting for bidding discussion"
+          />
+          <figcaption>
+            <a
+              href="https://unsplash.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Image source</a
+            >
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+            alt="Equipment inspection"
+          />
+          <figcaption>
+            <a
+              href="https://unsplash.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Image source</a
+            >
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="bid-progress-wrap">
+      <div class="bid-progress-meta">
+        <span><strong>From:</strong> 2026.04.11</span>
+        <span><strong>To:</strong> 2026.04.26</span>
+        <span
+          ><strong>Progress:</strong>
+          <span id="bid-progress-label">|=progress=|</span></span
+        >
+      </div>
+      <div class="bid-progress-bar" aria-label="Bid timeline progress">
+        <div
+          class="bid-progress-fill"
+          id="bid-progress-fill"
+          style="width: |=progress=|"
+        ></div>
+      </div>
+      <div class="bid-progress-note" id="bid-progress-note">
+        Timeline is calculated automatically based on the current date.
+      </div>
+    </div>
+  </div>
+  <sgscript>
+    (function () {      var startDate = new Date(2026, 3, 11); // 2026-04-11      var endDate = new Date(2026, 3, 26);   // 2026-04-26      var today = new Date();      var todayOnly = new Date(today.getFullYear(), today.getMonth(), today.getDate());      var startOnly = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());      var endOnly = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());      var msPerDay = 1000 * 60 * 60 * 24;      var totalDays = Math.round((endOnly - startOnly) / msPerDay);      var elapsedDays = Math.round((todayOnly - startOnly) / msPerDay);      var remainingDays = Math.ceil((endOnly - todayOnly) / msPerDay);      var ddayEl = document.getElementById("bid-dday-text");      var progressFillEl = document.getElementById("bid-progress-fill");      var progressLabelEl = document.getElementById("bid-progress-label");      var noteEl = document.getElementById("bid-progress-note");      var progress = 0;      if (todayOnly < startOnly) {        progress = 0;        ddayEl.textContent = "D-" + Math.ceil((endOnly - todayOnly) / msPerDay);        noteEl.textContent = "The bid period has not started yet.";      } else if (todayOnly > endOnly) {        progress = 100;        var passedDays = Math.ceil((todayOnly - endOnly) / msPerDay);        ddayEl.textContent = "Closed +" + passedDays;        noteEl.textContent = "The bid period has ended.";      } else {        progress = Math.round((elapsedDays / totalDays) * 100);        if (progress < 0) progress = 0;        if (progress > 100) progress = 100;        ddayEl.textContent = "D-" + remainingDays;        noteEl.textContent = "There are " + remainingDays + " day(s) remaining in the bid window.";      }      progressFillEl.style.width = progress + "%";      progressLabelEl.textContent = progress + "%";    })();
+  </sgscript>
+</section>
